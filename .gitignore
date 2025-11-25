@@ -1,0 +1,8 @@
+__pycache__
+venv
+conversations
+faiss_index_bom
+app.log
+.env
+loan_data_cleaned.txt
+loan_data_raw.txt

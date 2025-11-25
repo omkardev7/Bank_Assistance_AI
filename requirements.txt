@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-dotenv
+langchain
+langchain-google-genai
+langchain-community
+langchain-exa
+faiss-cpu
+exa-py
+pydantic
+langchain-huggingface
+sentence-transformers
+streamlit
