@@ -1,4 +1,3 @@
-# app.py
 import streamlit as st
 import requests
 import uuid
@@ -6,7 +5,7 @@ from datetime import datetime
 
 # Page configuration
 st.set_page_config(
-    page_title="Bank of Maharashtra Loan Assistant",
+    page_title="BoM Loan Product Assistant",
     page_icon="🏦",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -150,7 +149,7 @@ with st.sidebar:
             st.session_state.pending_question = question
 
 # Main content
-st.markdown('<h1 class="main-header">🏦 Bank of Maharashtra Loan Assistant</h1>', unsafe_allow_html=True)
+st.markdown('<h1 class="main-header">🏦 BoM Loan Product Assistant</h1>', unsafe_allow_html=True)
 
 # Introduction
 if len(st.session_state.messages) == 0:

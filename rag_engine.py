@@ -187,6 +187,17 @@ def process_query(question, session_id="default"):
             for i, doc in enumerate(docs)
         ])
         
+                # 🌟 NEW: Print full prompt with actual injected values
+        final_prompt = _prompt.format(
+            context=context_text,
+            history=history_text,
+            question=question
+        )
+        # logger.info("\n================ FINAL PROMPT SENT TO LLM ================\n")
+        # logger.info(final_prompt)
+        # logger.info("\n===========================================================\n")
+
+        
         # Generate answer
         chain = _prompt | _llm | StrOutputParser()
         

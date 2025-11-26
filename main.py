@@ -10,7 +10,7 @@ import config
 logger = config.get_logger(__name__)
 
 app = FastAPI(
-    title="Bank of Maharashtra Loan Assistant",
+    title="BoM Loan Product Assistant",
     description="AI-powered assistant for loan queries",
     version="2.0"
 )
@@ -62,7 +62,7 @@ async def root():
     """Health check endpoint"""
     return StatusResponse(
         status="ok",
-        message="Bank of Maharashtra Loan Assistant API is running"
+        message="Loan Product Assistant API is running"
     )
 
 @app.get("/health", response_model=StatusResponse)
